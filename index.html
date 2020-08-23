@@ -1,15 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Game Pong</title>
 </head>
+
 <body>
-    <h1>GAME PONG</h1>
-    <h3>Estudando JavaScript de forma divertida</h3>
-    <canvas id="canvas" width="800" height="500"></canvas>
+    <div class="left">
+        <div class="circle">
+            <div class="circle-second"></div>
+        </div>
+        <div class="line"></div>
+        <div class="circle-small">&#9650</div> <!--seta para cima-->
+        <div class="line">
+            <div class="circle-small">&#9668</div> <!--seta para a esquerda-->
+            <div class="circle-small">&#9658</div> <!--seta para a direita-->
+        </div>
+        <div class="circle-small">&#9660</div> <!--seta para baixo-->
+        <div class="line"></div>
+        <div class="square">
+            <div class="circle-mini"></div>
+        </div>
+    </div>
+    <div class="console">
+        <div id="game">
+            <h1>GAME PONG</h1>
+            <h5>Estudando JavaScript de forma divertida</h5>
+            <div class="instructions">
+                <div class="player">
+                    <h5>Player 1</h5>
+                    <div class="control">
+                        <p class="keyboard"> W </p>
+                        <p> para cima </p>
+                    </div>
+                    <div class="control">
+                        <p class="keyboard"> S </p>
+                        <p> para baixo </p>
+                    </div>
+                </div>
+                <div class="player">
+                    <h5>Player 2</h5>
+                    <div class="control">
+                        <p class="keyboard"> &#8593 </p>
+                        <p> para cima </p>
+                    </div>
+                    <div class="control">
+                        <p class="keyboard"> &#8595 </p>
+                        <p> para baixo </p>
+                    </div>
+                </div>
+            </div>
+            <input type="button" value="Jogar" onclick="start()">
+        </div>
+        <canvas id="canvas" width="800" height="500"></canvas>
+    </div>
+    <div class="right">
+        <div class="circle-small">X</div>
+        <div class="line">
+            <div class="circle-small">Y</div>
+            <div class="circle-small">A</div>
+        </div>
+        <div class="circle-small">B</div>
+        <div class="line"></div>
+        <div class="circle">
+            <div class="circle-second"></div>
+        </div>
+        <div class="line"></div>
+        <div class="circle-small-right">
+           <div class="circle-mini"></div>
+        </div>
+    </div>
+
     <script src="./script/pong.js"></script>
 </body>
+
 </html>
