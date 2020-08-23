@@ -16,4 +16,4 @@ Criando o game Pong com JS em menos de 15 minutos https://medium.com/@willyan.da
 **Autora | Author**
 Foto | Nome | GitHub | Likedin | E-mail
 ---- | ---- | ------ | ------- | ------
-<img src="./src/components/img/perfil.png" width="100px">  | Liz Vidotti | [Liz Vidotti](https://github.com/lizvidotti91) | [Linkedin](https://www.linkedin.com/in/elisetevidotti/) | liz.vidotti@gmail.com
+<img src="./img/perfil.png" width="100px">  | Liz Vidotti | [Liz Vidotti](https://github.com/lizvidotti91) | [Linkedin](https://www.linkedin.com/in/elisetevidotti/) | liz.vidotti@gmail.com
