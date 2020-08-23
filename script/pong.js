@@ -110,6 +110,8 @@ function start() {
 
         // Desenha os elementos do jogo
         draw();
+        // Função para mostrar o placar final, quando o vencedor chegar a 10 pontos
+        finalGame();
     }
 
     function initBall() {
@@ -161,6 +163,21 @@ function start() {
 
         canvasContext.fillText(p1Points, widthCanvas / 4, 50); // metade da tela do player 1
         canvasContext.fillText(p2Points, 3 * (widthCanvas / 4), 50); // metade da tela do player 2
+    }
+
+    // Função para mostrar o placar final, quando o vencedor chegar a 10 pontos
+    function finalGame() {
+        let score = window.document.getElementById('score');
+
+        if (p1Points == 5 || p2Points == 10) {
+            window.document.getElementById('canvas').style.display = 'none';
+            score.style.display = 'block';
+
+            score.innerHTML = `
+                <h1 style = "color: white; font-size: 50px; text-align: center"> GAME OVER! </h1>
+                <h5 style = "color: white; font-size: 30px; text-align: center"> ${p1Points} X ${p2Points} <h5>
+            `;
+        }
     }
 
     setup();
